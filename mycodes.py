@@ -9,14 +9,14 @@ data= {
 }
 
 # Convert the dictionary into a DataFrame
-df = pd.DataFrame(data)
+df = pd.DataFrame(data) 
 
 # Adding new rows to the DataFrame
 new_row_loc = {'Name': 'V2', 'Age': 20, 'City': 'City1'}
 df.loc[len(df.index)] = new_row_loc
 
 new_row_loc2 = {'Name': 'V3', 'Age': 30, 'City': 'City1'}
-df.loc[len(df.index)] = new_row_loc2
+df.loc[len(df.index)] = new_row_loc2 
 
 # Ensure the "data" directory exists at the root level
 data_dir = 'data'
@@ -29,4 +29,4 @@ file_path = os.path.join(data_dir, 'sample_data.csv')
 df.to_csv(file_path, index=False)
 
 # Print confirmation
-print(f"CSV file saved to {file_path}")
+print(f"CSV file saved to {file_path}") 
