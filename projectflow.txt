@@ -1,0 +1,3 @@
+create git repo and clone it in local
+create mycode.py and add code to it and it create the nwe csv file in the folder location path.
+Do a add-git-commit-push command before initializing the  dvc.
