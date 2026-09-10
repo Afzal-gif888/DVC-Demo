@@ -2,14 +2,14 @@ import pandas as pd
 import os
 
 # Create a sample DataFrame with column names
-df= {
+data= {
     'Name': ['Alice', 'Bob', 'Charlie'],
     'Age': [25, 30, 35],
     'City': ['New York', 'Los Angeles', 'Chicago']
 }
 
 # Convert the dictionary into a DataFrame
-df = pd.DataFrame(df)
+df = pd.DataFrame(data)
 
 # Adding new rows to the DataFrame
 # new_row_loc = {'Name': 'V2', 'Age': 20, 'City': 'City1'}
@@ -19,7 +19,7 @@ df = pd.DataFrame(df)
 # df.loc[len(df.index)] = new_row_loc2
 
 # Ensure the "data" directory exists at the root level
-data_dir = 'df'
+data_dir = 'data'
 os.makedirs(data_dir, exist_ok=True)
 
 # Define the file path
