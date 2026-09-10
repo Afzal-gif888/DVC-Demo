@@ -10,3 +10,9 @@
   because initially we are tarcaking data/ folder for git so now now we remove it for dvc to handle.
 9.Again we do "dvc add data/"(creates data.dvc) and then "git add .gitignore data.dvc".
 10.now we do dvc commit and dvc push.
+11.now we make changes to mycode.py to append a new row in data and check the changes through dvc status.
+12.Again dvc commit and push
+13 then repeat by using v2 and v3 and dvc commit-push and then git-add-commit-push 
+git log --oneline 
+git checkout<hash> - git checkout master
+dvc pull
